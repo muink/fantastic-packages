@@ -32,13 +32,13 @@ make menuconfig
 
 --------
 
-[luci-app-tinyfilemanager]: https://github.com/muink/luci-app-tinyfilemanager.git
-[luci-app-diskman]: https://github.com/lisaac/luci-app-diskman.git
-[luci-app-disks-info]: https://github.com/gSpotx2f/luci-app-disks-info.git
-[luci-app-change-mac]: https://github.com/muink/luci-app-change-mac.git
-[luci-app-natter]: https://github.com/muink/luci-app-natter.git
-[luci-app-pcap-dnsproxy]: https://github.com/muink/luci-app-pcap-dnsproxy.git
-[luci-app-tn-netports]: https://github.com/muink/luci-app-tn-netports.git
-[luci-app-serverchan]: https://github.com/tty228/luci-app-serverchan.git
-[luci-app-netspeedtest]: https://github.com/muink/luci-app-netspeedtest.git
-[luci-app-netdata]: https://github.com/muink/luci-app-netdata.git
+[luci-app-tinyfilemanager]: https://github.com/muink/luci-app-tinyfilemanager
+[luci-app-diskman]: https://github.com/lisaac/luci-app-diskman
+[luci-app-disks-info]: https://github.com/gSpotx2f/luci-app-disks-info
+[luci-app-change-mac]: https://github.com/muink/luci-app-change-mac
+[luci-app-natter]: https://github.com/muink/luci-app-natter
+[luci-app-pcap-dnsproxy]: https://github.com/muink/luci-app-pcap-dnsproxy
+[luci-app-tn-netports]: https://github.com/muink/luci-app-tn-netports
+[luci-app-serverchan]: https://github.com/tty228/luci-app-serverchan
+[luci-app-netspeedtest]: https://github.com/muink/luci-app-netspeedtest
+[luci-app-netdata]: https://github.com/muink/luci-app-netdata
