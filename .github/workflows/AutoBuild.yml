@@ -113,7 +113,7 @@ jobs:
           git reset HEAD $release_path/**/targets/
           git diff-index --cached --quiet HEAD $release_path/**/packages/**/*.ipk \
           && git diff-index --cached --quiet HEAD $release_path/**/*.pub \
-          || (git commit -m "Update packages" && git push)
+          || (git commit -m "TEST Update packages" && git push)
 
   deploy_pages:
     needs: [compile, push_packages]

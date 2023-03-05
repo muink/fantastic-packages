@@ -32,13 +32,15 @@ env:
 # 使用 GPG 签名 Packages (非必要)
   GPG_SIGN: true
 # Cache Libraries
-  CACHE_DOWNLOAD: true
+  CACHE_DOWNLOAD: false
 # Pre-download Libraries
   PRE_DOWNLOAD: false
 # 删除无用文件以增加编译空间
-  DELETE_USELESS_FILES: true
+  DELETE_USELESS_FILES: false
 # Artifact retention days
   ARTIFACT_RETENTION_DAYS: 3
+# 测试任务
+  TEST_TASK: true
 ### 结束
 
 jobs:
@@ -91,9 +93,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ env.shortversion }}
+          ref: 'master'
           lfs: true
-          submodules: true
+          submodules: false
 
       - name: Import GPG keys
         if: env.GPG_SIGN == 'true' && !cancelled()
@@ -119,10 +121,12 @@ jobs:
             popd
             rm -rf dl 2>/dev/null
             ln -s "/workdir/DL" dl
-            ./scripts/feeds update -a
-            ./scripts/feeds install -a
-            make defconfig
-            sed -i 's,CONFIG_LUCI_CSSTIDY=y,# CONFIG_LUCI_CSSTIDY is not set,' .config
+            if [ ! "${{env.TEST_TASK}}" == true ]; then
+              ./scripts/feeds update -a
+              ./scripts/feeds install -a
+              make defconfig
+              sed -i 's,CONFIG_LUCI_CSSTIDY=y,# CONFIG_LUCI_CSSTIDY is not set,' .config
+            fi
             popd
           }
 
@@ -155,7 +159,13 @@ jobs:
         run: |
           [ -d "/workdir/sdk-$VERSION-${TARGET//\//-}" ] && {
             pushd "/workdir/sdk-$VERSION-${TARGET//\//-}"
-            make package/fantastic-packages/compile V=99
+            if [ "${{env.TEST_TASK}}" == true ]; then
+              rm -rf   "/workdir/sdk-$VERSION-${TARGET//\//-}/bin/packages/$ARCH" 2>/dev/null
+              mkdir -p "/workdir/sdk-$VERSION-${TARGET//\//-}/bin/packages" 2>/dev/null
+              cp -rf "$GITHUB_WORKSPACE/test/bin/packages/$ARCH" "/workdir/sdk-$VERSION-${TARGET//\//-}/bin/packages/"
+            else
+              make package/fantastic-packages/compile V=99
+            fi
             popd
           }
 
@@ -256,9 +266,15 @@ jobs:
         run: |
           [ -d "/workdir/imagebuilder-$VERSION-${TARGET//\//-}" ] && {
             pushd "/workdir/imagebuilder-$VERSION-${TARGET//\//-}"
-            sed -i "s|\(\bCONFIG_TARGET_ROOTFS_PARTSIZE\)=.*|\1=${ROOTFS_SIZE}|" .config
-            eval $(find "$GITHUB_WORKSPACE/$TPATH/${VERSION%.*}/packages/$ARCH/" -type f -name *.ipk | sed -E 's|^(.+)$|cp -f "\1" packages/; |g;s|\$|\$|g')
-            make image PACKAGES="$(echo $(cat "$GITHUB_WORKSPACE/.github/workflows/prebuildpackages/$ARCH"))"
+            if [ "${{env.TEST_TASK}}" == true ]; then
+              rm -rf   "/workdir/imagebuilder-$VERSION-${TARGET//\//-}/bin/targets/$TARGET" 2>/dev/null
+              mkdir -p "/workdir/imagebuilder-$VERSION-${TARGET//\//-}/bin/targets/${TARGET%/*}" 2>/dev/null
+              cp -rf "$GITHUB_WORKSPACE/test/image/targets/$TARGET" "/workdir/imagebuilder-$VERSION-${TARGET//\//-}/bin/targets/${TARGET%/*}/"
+            else
+              sed -i "s|\(\bCONFIG_TARGET_ROOTFS_PARTSIZE\)=.*|\1=${ROOTFS_SIZE}|" .config
+              eval $(find "$GITHUB_WORKSPACE/$TPATH/${VERSION%.*}/packages/$ARCH/" -type f -name *.ipk | sed -E 's|^(.+)$|cp -f "\1" packages/; |g;s|\$|\$|g')
+              make image PACKAGES="$(echo $(cat "$GITHUB_WORKSPACE/.github/workflows/prebuildpackages/$ARCH"))"
+            fi
             popd
           }
 

@@ -1,0 +1,4 @@
+59a853de7defa284cf7286285cf8388cb7089e47d3c0c9186dabfdcb9520e185 *openwrt-22.03.2-x86-64-generic.manifest
+4e20c48acf9a12bd730bc907daa5386a1463c7565a6598e50670ff051bef7ac6 *openwrt-22.03.2-x86-64-generic-kernel.bin
+9d0f49de4e8af3316cb8026d88a3346ee69fbda6bbaa923a3bf01e1f23939ed2 *openwrt-22.03.2-x86-64-generic-rootfs.tar.gz
+1095282c84da9f15cc0560ffd6232d70b8a2e4d1d2bba983de2bb1c2f184c419 *profiles.json
