@@ -19,4 +19,10 @@ src/gz fantastic_packages https://fantastic-packages.github.io/packages/releases
 ```
 ### Add usign pub-keys to opkg
 - Download `https://fantastic-packages.github.io/packages/releases/<package arch>/<major.minor version>/<KEY-ID>.pub`
-- Put to `/etc/opkg/keys/<KEY-ID>`
+- Put to `/etc/opkg/keys/<key-id>`, note filename must be lowercase
+- Fast script
+```bash
+KEYID=<KEY-ID>
+mkdir -p /etc/opkg/keys 2>/dev/null
+curl -sSL -o /etc/opkg/keys/${KEYID,,} "https://fantastic-packages.github.io/packages/releases/<package arch>/<major.minor version>/${KEYID}.pub"
+```
