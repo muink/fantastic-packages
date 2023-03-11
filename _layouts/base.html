@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">{{ page.title }}</title>
+    <link href="{{ '/assets/css/openwrt.css' | relative_url }}" rel="stylesheet">
+    {% seo %}
+</head>
+<body>
+<h1 id="path"></h1>
+
+{{ content }}
+
+powered by ghpages-mini-fileserver © Anya Lin
+<br>
+based on ghpages-fileserver © Karlheinzniebuhr
+</body>
+
+<script>
+var path = window.location.pathname;
+var href= [ "<a href='/'><em>(root)</em></a> /" ];
+var papart = path.trim().split("/");
+var count = papart.length -2;
+
+if (count > 0) {
+  let regex = '';
+  for (var i = 1; i <= count; i++) {
+    regex = new RegExp('.*/' + papart[i] + '/');
+    href[i] = "<a href='" + path.match(regex) + "'>" + decodeURI(papart[i]) + "</a> /";
+  }
+}
+
+document.getElementById('title').innerHTML = "Index of " + decodeURI(path);
+document.getElementById('path').innerHTML = "Index of " + href.join(" ");
+</script>
+
+</html>

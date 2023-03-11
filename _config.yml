@@ -1,0 +1,31 @@
+# ref: <github.com/bryango/resources>
+encoding : utf-8
+plugins:
+  - jekyll-readme-index
+  - jekyll-seo-tag
+
+readme_index:
+  with_frontmatter: true
+
+kramdown:
+  auto_id_prefix: true
+
+defaults:
+  -
+    scope:
+      path: "resources"
+    values:
+      layout: "files"
+
+# defaults for github pages
+# ... see: <https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
+
+lsi: false
+safe: true
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
