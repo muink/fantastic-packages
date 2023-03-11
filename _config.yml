@@ -13,7 +13,7 @@ kramdown:
 defaults:
   -
     scope:
-      path: "resources"
+      path: "releases"
     values:
       layout: "files"
 
