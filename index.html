@@ -8,35 +8,9 @@ layout: base
 <table style="width:100%">
   <tr>
     <th>Name</th>
-    <th>Date</th>
   </tr>
 
 <!-- ref: <github.com/bryango/resources> start -->
-{%- for res in site.pages -%}
-
-<!-- ignore /README* -->
-  {%- assign checkStart = res.url | split: '/README' -%}
-  {%- if checkStart[0] == '' -%}
-    {%- continue -%}
-  {%- endif -%}
-<!-- ignore / -->
-  {%- assign checkStart = res.url | split: page.url -%}
-  {%- if checkStart[0] != '' -%}
-    {%- continue -%}
-  {%- endif -%}
-<!-- ignore /*/ -->
-  {%- assign target = res.url | remove_first: page.url -%}
-  {%- if target contains '/' -%}
-    {%- continue -%}
-  {%- endif -%}
-<!-- 
-  <tr>
-    <td><a class="post-link" href="{{ target }}">{{ target }}</a></td>
-    <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
-  </tr>
- -->
-{% endfor %}
-
 {%- for res in site.pages -%}
 
 <!-- ignore /assets/ -->
@@ -61,15 +35,9 @@ layout: base
     {%- assign folder = folder_new -%}
     <tr>
       <td><a class="post-link" href="{{ folder | append: '/' }}" >{{ folder | append: '/' }}</a></td>
-      <td></td>
     </tr>
   {%- endif -%}
-<!-- 
-  <tr>
-    <td><a class="post-link" href="{{ target }}">{{ target }}</a></td>
-    <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
-  </tr>
- -->
+
 {% endfor %}
 <!-- ref: <github.com/bryango/resources> end -->
 

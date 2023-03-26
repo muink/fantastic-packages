@@ -1,8 +1,12 @@
 # ref: <github.com/bryango/resources>
 encoding : utf-8
 plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
   - jekyll-readme-index
   - jekyll-seo-tag
+  - jekyll-file-size
+  - kramdown-parser-gfm
 
 readme_index:
   with_frontmatter: true
@@ -21,7 +25,7 @@ defaults:
 # ... see: <https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
 
 lsi: false
-safe: true
+safe: false
 highlighter: rouge
 gist:
   noscript: false
