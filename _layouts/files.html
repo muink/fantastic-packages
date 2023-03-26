@@ -9,6 +9,7 @@ layout: base
   <tr>
     <th>Name</th>
     <th>Date</th>
+    <th>Size</th>
   </tr>
 
 <!-- ref: <github.com/bryango/resources> start -->
@@ -33,6 +34,7 @@ layout: base
   <tr>
     <td><a class="post-link" href="{{ target }}">{{ target | remove_first: folder }}</a></td>
     <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+    <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
   </tr>
 
 {% endfor %}
@@ -56,13 +58,15 @@ layout: base
     {%- assign folder = folder_new -%}
     <tr>
       <td><a class="post-link" href="{{ folder | append: '/' }}" >{{ folder | append: '/' }}</a></td>
-      <td></td>
+      <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+      <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
     </tr>
   {%- endif -%}
 <!-- 
   <tr>
     <td><a class="post-link" href="{{ target }}">{{ target | remove_first: folder | remove_first: '/' }}</a></td>
     <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+    <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
   </tr>
  -->
 {% endfor %}

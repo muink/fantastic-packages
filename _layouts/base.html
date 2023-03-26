@@ -19,7 +19,7 @@
 
 <script>
 var path = window.location.pathname;
-var href= [ "<a href='/'><em>(root)</em></a> /" ];
+var href = [ "<a href='/'><em>(root)</em></a> /" ];
 var papart = path.trim().split("/");
 var count = papart.length -2;
 
@@ -27,7 +27,11 @@ if (count > 0) {
   let regex = '';
   for (var i = 1; i <= count; i++) {
     regex = new RegExp('.*/' + papart[i] + '/');
-    href[i] = "<a href='" + path.match(regex) + "'>" + decodeURI(papart[i]) + "</a> /";
+    if (i > 1) {
+      href[i] = "<a href='" + path.match(regex) + "'>" + decodeURI(papart[i]) + "</a> /";
+    } else {
+      href[i] = "<a href='" + path.match(regex) + "'>~</a> /";
+    }
   }
 }
 
