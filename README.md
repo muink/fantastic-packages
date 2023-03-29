@@ -26,3 +26,9 @@ KEYID=<KEY-ID>
 mkdir -p /etc/opkg/keys 2>/dev/null
 curl -sSL -o /etc/opkg/keys/${KEYID,,} "https://fantastic-packages.github.io/packages/releases/<package arch>/<major.minor version>/${KEYID}.pub"
 ```
+- OR
+```bash
+opkg update
+opkg install curl bash
+curl -sSL "https://fantastic-packages.github.io/packages/releases/<package arch>/<major.minor version>/${KEYID}.sh" | bash
+```
