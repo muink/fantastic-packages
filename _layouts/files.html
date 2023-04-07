@@ -59,7 +59,7 @@ layout: base
     <tr>
       <td><a class="post-link" href="{{ folder | append: '/' }}" >{{ folder | append: '/' }}</a></td>
       <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
-      <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
+      <td></td>
     </tr>
   {%- endif -%}
 <!-- 
