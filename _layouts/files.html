@@ -33,7 +33,7 @@ layout: base
 
   <tr>
     <td><a class="post-link" href="{{ target }}">{{ target | remove_first: folder }}</a></td>
-    <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+    <td>{{ res.modified_time | date: "%FT%T%z" }}</td>
     <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
   </tr>
 
@@ -58,14 +58,14 @@ layout: base
     {%- assign folder = folder_new -%}
     <tr>
       <td><a class="post-link" href="{{ folder | append: '/' }}" >{{ folder | append: '/' }}</a></td>
-      <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+      <td>{{ res.modified_time | date: "%FT%T%z" }}</td>
       <td></td>
     </tr>
   {%- endif -%}
 <!-- 
   <tr>
     <td><a class="post-link" href="{{ target }}">{{ target | remove_first: folder | remove_first: '/' }}</a></td>
-    <td>{{ res.modified_time | date: "%a %b %e %T %Y" }}</td>
+    <td>{{ res.modified_time | date: "%FT%T%z" }}</td>
     <td>{{ res.path | escape | prepend: '.' | file_size | string_of_size }}</td>
   </tr>
  -->
