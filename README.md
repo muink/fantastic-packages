@@ -4,7 +4,7 @@ Welcome to the fantastic-packages packages download page. Follow the links below
 ## Link
 [Releases](https://fantastic-packages.github.io/packages/releases/)
 
-## How to use in OpenWRT
+## How to use on OpenWRT
 ### Edit `/etc/opkg/customfeeds.conf`
 - Append the following to the EOF
 ```ini
