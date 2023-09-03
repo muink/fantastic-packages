@@ -43,15 +43,9 @@ jobs:
       contents: write  # To push a branch
     strategy:
       matrix:
-        version: [23.05.5, 24.10.1] # or SNAPSHOT
+        version: [24.10.1] # or SNAPSHOT
         arch_packages: [
-          x86_64,
-          aarch64_cortex-a53,
-          aarch64_generic,
-          arm_cortex-a15_neon-vfpv4,
-          arm_cortex-a9_vfpv3-d16,
-          mips_24kc,
-          mipsel_24kc
+          x86_64
           ]
         include:
           - usign_id: ${{ vars.USIGN_ID }}
@@ -60,18 +54,6 @@ jobs:
           - arch_packages: x86_64
             target: ['x86', '64'] # for imagebuilder
             profile: generic # for imagebuilder
-          - arch_packages: aarch64_cortex-a53
-            target: ['mvebu', 'cortexa53']
-          - arch_packages: aarch64_generic
-            target: ['armsr', 'armv8']
-          - arch_packages: arm_cortex-a15_neon-vfpv4
-            target: ['armsr', 'armv7']
-          - arch_packages: arm_cortex-a9_vfpv3-d16
-            target: ['mvebu', 'cortexa9']
-          - arch_packages: mips_24kc
-            target: ['ath79', 'generic']
-          - arch_packages: mipsel_24kc
-            target: ['ramips', 'mt7621']
     uses: ./.github/workflows/compile.yml
     with:
       compiles: ${{ inputs.compile_packages }}
