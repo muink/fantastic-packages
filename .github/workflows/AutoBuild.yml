@@ -40,7 +40,7 @@ env:
 # Release path
   release_path: 'releases'
 # 删除早期版本的 packages
-  DELETE_OLD_PACKAGES: true
+  DELETE_OLD_PACKAGES: false
 # 删除早期的 workflow 任务
   DELETE_OLD_WORKFLOW: true
   WORKFLOW_RETAIN_DAYS: 14
@@ -59,14 +59,9 @@ jobs:
       contents: write  # To push a branch
     strategy:
       matrix:
-        version: [23.05.5, 24.10.0] # or SNAPSHOT
+        version: [24.10.0] # or SNAPSHOT
         arch_packages: [
-          x86_64,
-          aarch64_cortex-a53,
-          aarch64_generic,
-          arm_cortex-a15_neon-vfpv4,
-          mips_24kc,
-          mipsel_24kc
+          x86_64
           ]
         include:
           - usign_id: ${{ vars.USIGN_ID }}
@@ -77,16 +72,6 @@ jobs:
             target: ['x86', '64'] # for imagebuilder
             profile: generic # for imagebuilder
             no_img: false
-          - arch_packages: aarch64_cortex-a53
-            target: ['mvebu', 'cortexa53']
-          - arch_packages: aarch64_generic
-            target: ['armsr', 'armv8']
-          - arch_packages: arm_cortex-a15_neon-vfpv4
-            target: ['armsr', 'armv7']
-          - arch_packages: mips_24kc
-            target: ['ath79', 'generic']
-          - arch_packages: mipsel_24kc
-            target: ['ramips', 'mt7621']
     uses: ./.github/workflows/compile.yml
     with:
       build_mode: ${{ inputs.build_mode }}
