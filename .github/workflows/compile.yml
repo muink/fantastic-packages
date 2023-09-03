@@ -100,7 +100,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ env.BRANCH }}
+          ref: ${{ github.ref_name }}
           lfs: true
           submodules: true
 
