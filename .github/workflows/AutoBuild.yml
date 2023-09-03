@@ -40,7 +40,7 @@ env:
 # Release path
   release_path: 'releases'
 # 删除早期的 packages
-  DELETE_OLD_PACKAGES: true
+  DELETE_OLD_PACKAGES: false
 # 删除早期的 workflow 任务
   DELETE_OLD_WORKFLOW: true
   WORKFLOW_RETAIN_DAYS: 14
@@ -61,15 +61,7 @@ jobs:
       matrix:
         version: [23.05.3]
         arch: [
-          x86_64,
-          mips_24kc,
-          arm_cortex-a7_neon-vfpv4,
-          aarch64_cortex-a53,
-          aarch64_cortex-a72,
-          arm_cortex-a9,
-          arm_cortex-a15_neon-vfpv4,
-          mipsel_24kc,
-          aarch64_generic
+          x86_64
           ]
         include:
           - usign_id: ${{ vars.USIGN_ID }}
