@@ -12,7 +12,7 @@ src/gz fantastic_packages_luci https://fantastic-packages.github.io/packages/rel
 src/gz fantastic_packages_packages https://fantastic-packages.github.io/packages/releases/<major.minor version>/packages/<package arch>/packages
 ```
 
-**Note: Please refer to this [matrix](https://github.com/fantastic-packages/packages/blob/master/.github/workflows/AutoBuild.yml#L51) for currently supported Version and Architecture.
+**Note: Please refer to this [matrix](https://github.com/fantastic-packages/packages/blob/master/.github/workflows/AutoBuild.yml#L61) for currently supported Version and Architecture.
 If your device is not listed, you can fork this repo and modify the matrix to add support for your device, then compile it with Github Action in your own repo**
 
 - like this
