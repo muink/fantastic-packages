@@ -38,3 +38,6 @@ opkg update
 opkg install curl bash
 curl -sSL "https://fantastic-packages.github.io/packages/releases/<major.minor version>/${KEYID}.sh" | bash
 ```
+- OR
+
+install [fantastic-feeds](https://github.com/openwrt-xiaomi/fantastic-feeds) by @remittor 
