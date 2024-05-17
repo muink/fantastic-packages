@@ -1,0 +1,1 @@
+{"bomFormat":"CycloneDX","serialNumber":"urn:uuid:fc5f7822-debc-401d-9d73-4330beafd740","components":[{"licenses":[{"license":{"name":"GPL-2.0-or-later"}},{"license":{"name":"GPL-2.0-only"}}],"type":"application","name":"einat-ebpf","version":"0.1.2"}],"metadata":{"timestamp":"2024-08-12T10:20:02Z"},"specVersion":"1.4","version":1}
