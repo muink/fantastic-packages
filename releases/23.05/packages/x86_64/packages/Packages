@@ -224,10 +224,10 @@ Provides: natmapt-client-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 816
+Installed-Size: 818
 Filename: natmapt-client-script-deluge_20240603-3_all.ipk
-Size: 1613
-SHA256sum: 387a7a1b7e8283438b11d0fe6f4ab7b7e89a3f067be216513886eaafbb63f33a
+Size: 1620
+SHA256sum: 5813fffde46707761a3909cfedfa92e2d77e5cdbd279494cc6e312051b5f3e37
 Description:  NATMap client scripts (Deluge)
 
 Package: natmapt-client-script-transmission
@@ -237,10 +237,10 @@ Provides: natmapt-client-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 633
+Installed-Size: 636
 Filename: natmapt-client-script-transmission_20240603-3_all.ipk
-Size: 1432
-SHA256sum: 9f480b8ac02fdc827fa414ae875bb47ef7a6af1db14d33fe37e58521bd62f9d2
+Size: 1427
+SHA256sum: 050d734091fd8f344fe64544fcd77faf78dd07eca395e82af9d62525c810022b
 Description:  NATMap client scripts (Transmission)
 
 Package: natmapt-notify-script-pushbullet
@@ -250,10 +250,10 @@ Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 626
+Installed-Size: 622
 Filename: natmapt-notify-script-pushbullet_20240603-3_all.ipk
-Size: 1428
-SHA256sum: 22f1d252bdcf79993f1b71a52a3bbe7ec5cb7656af132138cbd5b709c42c9a47
+Size: 1423
+SHA256sum: 63e1ab6754771f211cadf851a796042ec7757b8406d56e79fd9f4fd372e88634
 Description:  NATMap notify scripts (Pushbullet)
 
 Package: natmapt-notify-script-pushover
@@ -263,10 +263,10 @@ Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 646
+Installed-Size: 645
 Filename: natmapt-notify-script-pushover_20240603-3_all.ipk
-Size: 1443
-SHA256sum: 7f8a3fecd22628d6dfdcd3efb6707acffbe4a77f7dcda8e4237d61c7114b07a2
+Size: 1437
+SHA256sum: 118211544a764937ba82a16c1807d279abbd7e6e3414706e70128a3bb2c5dad3
 Description:  NATMap notify scripts (Pushover)
 
 Package: natmapt-notify-script-telegram
@@ -276,10 +276,10 @@ Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 639
+Installed-Size: 638
 Filename: natmapt-notify-script-telegram_20240603-3_all.ipk
-Size: 1434
-SHA256sum: 20d426436b07f0417df2c21861e56d662404433d0497c2181bf2614b3c7e442f
+Size: 1432
+SHA256sum: 32e70402a6d163a7d238fe9b983c748745aad6d6f9dfbdd3a2311f666a8397a4
 Description:  NATMap notify scripts (Telegram)
 
 Package: natmapt
@@ -288,10 +288,10 @@ Depends: libc, curl, jsonfilter, bash
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 26765
+Installed-Size: 26771
 Filename: natmapt_20240603-3_x86_64.ipk
-Size: 27667
-SHA256sum: 3f04d7686f41b434f6e1bedf152a9ee6f8661cf016ff6f0a42169f3e7d84d9c9
+Size: 27670
+SHA256sum: d04f950ab901a7fa6df901231e2bffb0d13dcab02fcd2ab7c0c55622cd0ceff0
 Description:  TCP/UDP port mapping tool for full cone NAT
 
 Package: netdata-ssl
@@ -470,15 +470,15 @@ Description:  Rasterbar libtorrent is a C++ library that aims to be a good alter
  full featured client, although it comes with a working example client.
 
 Package: rgmac
-Version: 1.5.0-20240101
+Version: 1.5.1-20240803
 Depends: libc, bash, curl, coreutils-cksum, getopt
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 3653
-Filename: rgmac_1.5.0-20240101_all.ipk
-Size: 4475
-SHA256sum: b02f60974df7d82a5be269329a0bd3ca0e38fe7a81fb96612766986505123f6c
+Installed-Size: 3656
+Filename: rgmac_1.5.1-20240803_all.ipk
+Size: 4473
+SHA256sum: 73d2f3b24f926dd130a4e6d746c664c6d749fce411d38106f19958c0f22f70e2
 Description:  A random MAC address generator
 
 Package: speedtest-go
