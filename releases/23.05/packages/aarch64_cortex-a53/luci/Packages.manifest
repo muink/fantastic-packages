@@ -1,16 +1,16 @@
 Package: luci-app-alwaysonline
-Version: 20240730
+Version: 20240803
 Depends: libc, uci-alwaysonline
 Source: /feed/luci/luci-app-alwaysonline
 SourceName: luci-app-alwaysonline
 Section: luci
-SourceDateEpoch: 1722343381
+SourceDateEpoch: 1722737401
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 1593
-Filename: luci-app-alwaysonline_20240730_all.ipk
-Size: 2421
-SHA256sum: fb301a62298108af226fbaf1bf867f4fefa77530dee23f2c921ddbf8a8900e1c
+Installed-Size: 1599
+Filename: luci-app-alwaysonline_20240803_all.ipk
+Size: 2428
+SHA256sum: 34752d21bca706ac9b9820c4993a4bf12d5e0a99932bf50ba5bd88deff317f83
 Description:  Hijack/bypass Windows NCSI and iOS portal detection
 
 Package: luci-app-argon-config
@@ -281,18 +281,18 @@ SHA256sum: b44089ff3ffa222bcbb992df5a1147a2b26d2ebdfb6f779a4783e11b2bbab0b1
 Description:  Test Net speed
 
 Package: luci-app-packagesync
-Version: 20240412
+Version: 20240804
 Depends: libc, blockd, curl, getopt, rsync, bash, jsonfilter, ncat-full
 Source: /feed/luci/luci-app-packagesync
 SourceName: luci-app-packagesync
 Section: luci
-SourceDateEpoch: 1722684582
+SourceDateEpoch: 1722753266
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 10668
-Filename: luci-app-packagesync_20240412_all.ipk
-Size: 11596
-SHA256sum: c3fc8d4e9600bf96576c10b039486e225c1fdb4c007df6ee9b158f2f82a5a0be
+Installed-Size: 11235
+Filename: luci-app-packagesync_20240804_all.ipk
+Size: 12141
+SHA256sum: b726194fe2e4e2292c0a040749180f21ee105ea868ff58a385e2b07503136474
 Description:  Used to build a local mirror feeds source on the router
 
 Package: luci-app-pcap-dnsproxy
@@ -406,31 +406,31 @@ SHA256sum: 71552a62e18a244cdd5dcf70d8c0b4708f8fb49dc5c52c7a38a292196f950c78
 Description:  LuCI Support for Xray (Client-side Rendered).
 
 Package: luci-i18n-alwaysonline-zh-cn
-Version: git-24.212.45781-9f798d6
+Version: git-24.217.07801-b3ef96c
 Depends: libc, luci-app-alwaysonline
 Source: /feed/luci/luci-app-alwaysonline
 SourceName: luci-i18n-alwaysonline-zh-cn
 Section: luci
-SourceDateEpoch: 1722343381
+SourceDateEpoch: 1722737401
 Architecture: all
-Installed-Size: 838
-Filename: luci-i18n-alwaysonline-zh-cn_git-24.212.45781-9f798d6_all.ipk
-Size: 1603
-SHA256sum: 213fb17d3c1e56a5d12783c7658faf153b5eec4472e5108233728322c4e36bf4
+Installed-Size: 839
+Filename: luci-i18n-alwaysonline-zh-cn_git-24.217.07801-b3ef96c_all.ipk
+Size: 1606
+SHA256sum: 857980ba7eebb16cafd16293d23545fcd47eb8c070244aa97389723306a6b963
 Description:  Translation for luci-app-alwaysonline - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-alwaysonline-zh-tw
-Version: git-24.212.45781-9f798d6
+Version: git-24.217.07801-b3ef96c
 Depends: libc, luci-app-alwaysonline
 Source: /feed/luci/luci-app-alwaysonline
 SourceName: luci-i18n-alwaysonline-zh-tw
 Section: luci
-SourceDateEpoch: 1722343381
+SourceDateEpoch: 1722737401
 Architecture: all
-Installed-Size: 839
-Filename: luci-i18n-alwaysonline-zh-tw_git-24.212.45781-9f798d6_all.ipk
-Size: 1605
-SHA256sum: c3e5a35c0a6578392e74de6d6d18020e796bf6641eec5d18b6f9b45b93eb77b7
+Installed-Size: 840
+Filename: luci-i18n-alwaysonline-zh-tw_git-24.217.07801-b3ef96c_all.ipk
+Size: 1607
+SHA256sum: 7db9f36c9c5a069194dc2329d2829db957982552079863f05bd16e90f1d3763d
 Description:  Translation for luci-app-alwaysonline - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-argon-config-es
@@ -1111,31 +1111,31 @@ SHA256sum: 645fd267d82912e17e82bb3625750b4d1506eac27708f56152ecad999c3035ef
 Description:  Translation for luci-app-netspeedtest - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-packagesync-zh-cn
-Version: git-24.216.41382-0c50aba
+Version: git-24.217.23666-09ba12f
 Depends: libc, luci-app-packagesync
 Source: /feed/luci/luci-app-packagesync
 SourceName: luci-i18n-packagesync-zh-cn
 Section: luci
-SourceDateEpoch: 1722684582
+SourceDateEpoch: 1722753266
 Architecture: all
-Installed-Size: 1469
-Filename: luci-i18n-packagesync-zh-cn_git-24.216.41382-0c50aba_all.ipk
+Installed-Size: 1468
+Filename: luci-i18n-packagesync-zh-cn_git-24.217.23666-09ba12f_all.ipk
 Size: 2234
-SHA256sum: dceb2c4dc64f2c2423d5dc576542c57191df3bd397fef10a1263972aacf689cf
+SHA256sum: cf381e0abb72c0fc92ac8fc5f81bf80e943a081d1e986eebb7caa63aa6acb60f
 Description:  Translation for luci-app-packagesync - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-packagesync-zh-tw
-Version: git-24.216.41382-0c50aba
+Version: git-24.217.23666-09ba12f
 Depends: libc, luci-app-packagesync
 Source: /feed/luci/luci-app-packagesync
 SourceName: luci-i18n-packagesync-zh-tw
 Section: luci
-SourceDateEpoch: 1722684582
+SourceDateEpoch: 1722753266
 Architecture: all
-Installed-Size: 1481
-Filename: luci-i18n-packagesync-zh-tw_git-24.216.41382-0c50aba_all.ipk
-Size: 2249
-SHA256sum: afd1a0dee9519ba9895c06c4035a6e068ba9e4a57fa823ee320d02aea18b38f6
+Installed-Size: 1479
+Filename: luci-i18n-packagesync-zh-tw_git-24.217.23666-09ba12f_all.ipk
+Size: 2245
+SHA256sum: df068304b89f2eb9c376393695970403332ca72b828daa09a814be819aa42c9c
 Description:  Translation for luci-app-packagesync - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-pcap-dnsproxy-zh-cn

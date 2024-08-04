@@ -18,8 +18,8 @@ Section: net
 Architecture: aarch64_generic
 Installed-Size: 1856604
 Filename: alwaysonline_1.2.0-20240731_aarch64_generic.ipk
-Size: 1852742
-SHA256sum: fe160e40d8a82dbbff5a63938e5fd45c57a96f36defb54646d642f1e481acc98
+Size: 1852671
+SHA256sum: 1b28fed49850007fc54de3ccebcb7a113d7c0c53b0714cded453459e74beb535
 Description:  AlwaysOnline is a HTTP and DNS server which mocks a lot network/internet/portal detection servers.
 
 Package: chinadns-ng
@@ -218,80 +218,80 @@ SHA256sum: ae0e8f599d07df057de9967c8d94a44c57daa5844713ad2f71f11a8401881aac
 Description:  This package provides the Qt6 Xml v6.7.2 library.
 
 Package: natmapt-client-script-deluge
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, natmapt
 Provides: natmapt-client-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 818
-Filename: natmapt-client-script-deluge_20240603-3_all.ipk
-Size: 1620
-SHA256sum: 5813fffde46707761a3909cfedfa92e2d77e5cdbd279494cc6e312051b5f3e37
+Installed-Size: 815
+Filename: natmapt-client-script-deluge_20240603-4_all.ipk
+Size: 1614
+SHA256sum: 550cd859f828be0fe0a3b9772edeb247b77c3fd3d24348b30081dd97b838b20c
 Description:  NATMap client scripts (Deluge)
 
 Package: natmapt-client-script-transmission
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, natmapt
 Provides: natmapt-client-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 636
-Filename: natmapt-client-script-transmission_20240603-3_all.ipk
-Size: 1427
-SHA256sum: 050d734091fd8f344fe64544fcd77faf78dd07eca395e82af9d62525c810022b
+Installed-Size: 637
+Filename: natmapt-client-script-transmission_20240603-4_all.ipk
+Size: 1431
+SHA256sum: b30223402b83852fb65d46aabc4d458451d5f58d493edba47c87125dfff685c9
 Description:  NATMap client scripts (Transmission)
 
 Package: natmapt-notify-script-pushbullet
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, natmapt
 Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 622
-Filename: natmapt-notify-script-pushbullet_20240603-3_all.ipk
+Installed-Size: 625
+Filename: natmapt-notify-script-pushbullet_20240603-4_all.ipk
 Size: 1423
-SHA256sum: 63e1ab6754771f211cadf851a796042ec7757b8406d56e79fd9f4fd372e88634
+SHA256sum: b650418b3985534a4d5f805f088d6fe5cede2be2e30a8ac8ad623381ad17ab65
 Description:  NATMap notify scripts (Pushbullet)
 
 Package: natmapt-notify-script-pushover
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, natmapt
 Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
 Installed-Size: 645
-Filename: natmapt-notify-script-pushover_20240603-3_all.ipk
-Size: 1437
-SHA256sum: 118211544a764937ba82a16c1807d279abbd7e6e3414706e70128a3bb2c5dad3
+Filename: natmapt-notify-script-pushover_20240603-4_all.ipk
+Size: 1442
+SHA256sum: e5c1620a278df1e9b57379a301833aa16e322197c3eb1ef9c65b6dafdc337789
 Description:  NATMap notify scripts (Pushover)
 
 Package: natmapt-notify-script-telegram
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, natmapt
 Provides: natmapt-notify-scripts
 License: MIT
 Section: net
 Architecture: all
-Installed-Size: 638
-Filename: natmapt-notify-script-telegram_20240603-3_all.ipk
-Size: 1432
-SHA256sum: 32e70402a6d163a7d238fe9b983c748745aad6d6f9dfbdd3a2311f666a8397a4
+Installed-Size: 639
+Filename: natmapt-notify-script-telegram_20240603-4_all.ipk
+Size: 1436
+SHA256sum: d4d670224066aa82d3c769949500f3168c9a7a7dbe63c79fffab1f35eeef7d48
 Description:  NATMap notify scripts (Telegram)
 
 Package: natmapt
-Version: 20240603-3
+Version: 20240603-4
 Depends: libc, curl, jsonfilter, bash
 License: MIT
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 27715
-Filename: natmapt_20240603-3_aarch64_generic.ipk
-Size: 28464
-SHA256sum: 3c1d0e313d292830621e9e3f79b19ada82a7ff0526687cf847d73510161d60c2
+Installed-Size: 27746
+Filename: natmapt_20240603-4_aarch64_generic.ipk
+Size: 28502
+SHA256sum: ecfec7a2c8f949d3223ec00050e075c88370e53a3ee3b42acf2504e98e4867ef
 Description:  TCP/UDP port mapping tool for full cone NAT
 
 Package: netdata-ssl
