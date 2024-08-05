@@ -9,6 +9,17 @@ Size: 2421
 SHA256sum: fb301a62298108af226fbaf1bf867f4fefa77530dee23f2c921ddbf8a8900e1c
 Description:  Hijack/bypass Windows NCSI and iOS portal detection
 
+Package: luci-app-alwaysonline
+Version: 20240803
+Depends: libc, uci-alwaysonline
+Section: luci
+Architecture: all
+Installed-Size: 1599
+Filename: luci-app-alwaysonline_20240803_all.ipk
+Size: 2428
+SHA256sum: 34752d21bca706ac9b9820c4993a4bf12d5e0a99932bf50ba5bd88deff317f83
+Description:  Hijack/bypass Windows NCSI and iOS portal detection
+
 Package: luci-app-argon-config
 Version: 1.0
 Depends: libc, luci-theme-argon
@@ -126,6 +137,17 @@ Size: 449642
 SHA256sum: f30f7e368ea27a0519ab5b8fb130a2ebc5bb343463cce0121d46d043f481bb78
 Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
 
+Package: luci-app-homeproxy
+Version: git-24.217.40253-2ce36c6
+Depends: libc, sing-box, chinadns-ng, firewall4, kmod-nft-tproxy, unzip
+Section: luci
+Architecture: all
+Installed-Size: 485713
+Filename: luci-app-homeproxy_git-24.217.40253-2ce36c6_all.ipk
+Size: 486727
+SHA256sum: 39f4de5739ce3dd19bf9bbc896c7b9e3f51deb51bc644326a9e2bae05e768dcd
+Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
+
 Package: luci-app-interfaces-statistics
 Version: 0.4.0-r4
 Depends: libc
@@ -218,6 +240,17 @@ Size: 11594
 SHA256sum: 0303b711d6262b48fa9fa45e1ee53bca1eb8c8e109c07f8e1a2eb091de7c27fa
 Description:  Used to build a local mirror feeds source on the router
 
+Package: luci-app-packagesync
+Version: 20240804
+Depends: libc, blockd, curl, getopt, rsync, bash, jsonfilter, ncat-full
+Section: luci
+Architecture: all
+Installed-Size: 11235
+Filename: luci-app-packagesync_20240804_all.ipk
+Size: 12141
+SHA256sum: b726194fe2e4e2292c0a040749180f21ee105ea868ff58a385e2b07503136474
+Description:  Used to build a local mirror feeds source on the router
+
 Package: luci-app-pcap-dnsproxy
 Version: 0.4.9.13-20231213
 Depends: libc, luci-compat, pcap-dnsproxy, bash, curl, unzip, coreutils-stat, luci-lua-runtime
@@ -261,6 +294,17 @@ Installed-Size: 1216833
 Filename: luci-app-tinyfilemanager_2.5.3-20231119_all.ipk
 Size: 1218291
 SHA256sum: 0d943088e3ce84915465216257f717e24351ddfd998ed20253aa8a4e04a506cc
+Description:  A Web based File Manager in PHP
+
+Package: luci-app-tinyfilemanager
+Version: 2.5.3-20240803
+Depends: libc, php8, php8-cgi, php8-fastcgi, php8-fpm, php8-mod-session, php8-mod-ctype, php8-mod-fileinfo, php8-mod-zip, php8-mod-iconv, php8-mod-mbstring, coreutils-stat, zoneinfo-asia, bash, curl, tar
+Section: luci
+Architecture: all
+Installed-Size: 1216848
+Filename: luci-app-tinyfilemanager_2.5.3-20240803_all.ipk
+Size: 1218310
+SHA256sum: 8ddeb419aeb6501a5a68a1120c51dd2507464ef05f8236089059e8d401487d72
 Description:  A Web based File Manager in PHP
 
 Package: luci-app-tn-netports
@@ -309,6 +353,17 @@ Size: 1603
 SHA256sum: 213fb17d3c1e56a5d12783c7658faf153b5eec4472e5108233728322c4e36bf4
 Description:  Translation for luci-app-alwaysonline - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-alwaysonline-zh-cn
+Version: git-24.217.07801-b3ef96c
+Depends: libc, luci-app-alwaysonline
+Section: luci
+Architecture: all
+Installed-Size: 839
+Filename: luci-i18n-alwaysonline-zh-cn_git-24.217.07801-b3ef96c_all.ipk
+Size: 1606
+SHA256sum: 857980ba7eebb16cafd16293d23545fcd47eb8c070244aa97389723306a6b963
+Description:  Translation for luci-app-alwaysonline - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-alwaysonline-zh-tw
 Version: git-24.212.45781-9f798d6
 Depends: libc, luci-app-alwaysonline
@@ -318,6 +373,17 @@ Installed-Size: 839
 Filename: luci-i18n-alwaysonline-zh-tw_git-24.212.45781-9f798d6_all.ipk
 Size: 1605
 SHA256sum: c3e5a35c0a6578392e74de6d6d18020e796bf6641eec5d18b6f9b45b93eb77b7
+Description:  Translation for luci-app-alwaysonline - 繁體中文 (Chinese Traditional)
+
+Package: luci-i18n-alwaysonline-zh-tw
+Version: git-24.217.07801-b3ef96c
+Depends: libc, luci-app-alwaysonline
+Section: luci
+Architecture: all
+Installed-Size: 840
+Filename: luci-i18n-alwaysonline-zh-tw_git-24.217.07801-b3ef96c_all.ipk
+Size: 1607
+SHA256sum: 7db9f36c9c5a069194dc2329d2829db957982552079863f05bd16e90f1d3763d
 Description:  Translation for luci-app-alwaysonline - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-argon-config-es
@@ -364,6 +430,17 @@ Size: 1711
 SHA256sum: 649ca33c79a3d5e1c0bd20592ccb0f35e00a24e219cbea6d6f3171be11e66dc9
 Description:  Translation for luci-app-change-mac - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-change-mac-zh-cn
+Version: git-24.216.25917-56a80fe
+Depends: libc, luci-app-change-mac
+Section: luci
+Architecture: all
+Installed-Size: 949
+Filename: luci-i18n-change-mac-zh-cn_git-24.216.25917-56a80fe_all.ipk
+Size: 1712
+SHA256sum: 5f805b115965f0ad425f078fb6c513be214908c0d933b3bf9b57d432ef53d5ba
+Description:  Translation for luci-app-change-mac - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-change-mac-zh-tw
 Version: git-23.131.60760-6ebc62e
 Depends: libc, luci-app-change-mac
@@ -373,6 +450,17 @@ Installed-Size: 949
 Filename: luci-i18n-change-mac-zh-tw_git-23.131.60760-6ebc62e_all.ipk
 Size: 1711
 SHA256sum: 40e600acf9a32fc6dbf33653c8bdba9cb02b68797c42abcf0e10a7505bb1a14d
+Description:  Translation for luci-app-change-mac - 繁體中文 (Chinese Traditional)
+
+Package: luci-i18n-change-mac-zh-tw
+Version: git-24.216.25917-56a80fe
+Depends: libc, luci-app-change-mac
+Section: luci
+Architecture: all
+Installed-Size: 949
+Filename: luci-i18n-change-mac-zh-tw_git-24.216.25917-56a80fe_all.ipk
+Size: 1706
+SHA256sum: d827d0867f0bf244292cb7d006b6ad06fdbbac28361fde0a6133ce5eef150a96
 Description:  Translation for luci-app-change-mac - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-cpu-perf-ru
@@ -528,6 +616,17 @@ Installed-Size: 11012
 Filename: luci-i18n-homeproxy-zh-cn_git-24.215.06463-eec1023_all.ipk
 Size: 11801
 SHA256sum: cff375dae20c72eb9f8d57a7a86b1d1d078417a6df4b4e4b4231ea8a83957b9b
+Description:  Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
+
+Package: luci-i18n-homeproxy-zh-cn
+Version: git-24.217.40253-2ce36c6
+Depends: libc, luci-app-homeproxy
+Section: luci
+Architecture: all
+Installed-Size: 11011
+Filename: luci-i18n-homeproxy-zh-cn_git-24.217.40253-2ce36c6_all.ipk
+Size: 11804
+SHA256sum: 36e7e9f132457db5e48ddcbed5906d6f18ad7b79721349c6edfbbc5c83b74017
 Description:  Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-interfaces-statistics-ru
@@ -848,6 +947,17 @@ Size: 2236
 SHA256sum: 3de26d5c76f5324fea18ee47f3601a070e2d428d6eea9bf7ce5e542c886f3446
 Description:  Translation for luci-app-packagesync - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-packagesync-zh-cn
+Version: git-24.217.23666-09ba12f
+Depends: libc, luci-app-packagesync
+Section: luci
+Architecture: all
+Installed-Size: 1468
+Filename: luci-i18n-packagesync-zh-cn_git-24.217.23666-09ba12f_all.ipk
+Size: 2234
+SHA256sum: cf381e0abb72c0fc92ac8fc5f81bf80e943a081d1e986eebb7caa63aa6acb60f
+Description:  Translation for luci-app-packagesync - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-packagesync-zh-tw
 Version: git-24.104.10708-0875a6f
 Depends: libc, luci-app-packagesync
@@ -857,6 +967,17 @@ Installed-Size: 1481
 Filename: luci-i18n-packagesync-zh-tw_git-24.104.10708-0875a6f_all.ipk
 Size: 2244
 SHA256sum: 2dd4b7524697d57ada9cbe249647752ddfb93ff5deb98bb94e33f546218c265b
+Description:  Translation for luci-app-packagesync - 繁體中文 (Chinese Traditional)
+
+Package: luci-i18n-packagesync-zh-tw
+Version: git-24.217.23666-09ba12f
+Depends: libc, luci-app-packagesync
+Section: luci
+Architecture: all
+Installed-Size: 1479
+Filename: luci-i18n-packagesync-zh-tw_git-24.217.23666-09ba12f_all.ipk
+Size: 2245
+SHA256sum: df068304b89f2eb9c376393695970403332ca72b828daa09a814be819aa42c9c
 Description:  Translation for luci-app-packagesync - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-pcap-dnsproxy-zh-cn
@@ -915,6 +1036,17 @@ Size: 1913
 SHA256sum: d1a6089b303398494dcdf589f8f26a29f6c7f431fa912b84a5fa71ec360463f8
 Description:  Translation for luci-app-tinyfilemanager - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-tinyfilemanager-zh-cn
+Version: git-24.216.35720-8f28cff
+Depends: libc, luci-app-tinyfilemanager
+Section: luci
+Architecture: all
+Installed-Size: 1154
+Filename: luci-i18n-tinyfilemanager-zh-cn_git-24.216.35720-8f28cff_all.ipk
+Size: 1913
+SHA256sum: ebacd0bc32ce215b5e00868f60484b48bde26c1d25ed166fc725aa34159c2513
+Description:  Translation for luci-app-tinyfilemanager - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-tinyfilemanager-zh-tw
 Version: git-24.182.42857-2a9cd99
 Depends: libc, luci-app-tinyfilemanager
@@ -924,6 +1056,17 @@ Installed-Size: 1164
 Filename: luci-i18n-tinyfilemanager-zh-tw_git-24.182.42857-2a9cd99_all.ipk
 Size: 1930
 SHA256sum: b29e3510d28365daaf3c4226def14a3a90138796e130f826a45c14a5a27bb267
+Description:  Translation for luci-app-tinyfilemanager - 繁體中文 (Chinese Traditional)
+
+Package: luci-i18n-tinyfilemanager-zh-tw
+Version: git-24.216.35720-8f28cff
+Depends: libc, luci-app-tinyfilemanager
+Section: luci
+Architecture: all
+Installed-Size: 1166
+Filename: luci-i18n-tinyfilemanager-zh-tw_git-24.216.35720-8f28cff_all.ipk
+Size: 1921
+SHA256sum: 411daeac9f72ba656dbdd8e97e3fb5226ed2ed57b91d861e0031d6bd0ad46a4b
 Description:  Translation for luci-app-tinyfilemanager - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-tn-netports-ru

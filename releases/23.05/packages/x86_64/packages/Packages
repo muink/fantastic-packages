@@ -23,6 +23,18 @@ SHA256sum: 2d1c611b75c72db20e8b38052e0a5dc831b8063f857193ae9d64632d2e62871a
 Description:  AlwaysOnline is a HTTP and DNS server which mocks a lot network/internet/portal detection servers.
 
 Package: chinadns-ng
+Version: 2023.10.28-1
+Depends: libc
+License: AGPL-3.0-only
+Section: net
+Architecture: x86_64
+Installed-Size: 29528
+Filename: chinadns-ng_2023.10.28-1_x86_64.ipk
+Size: 30310
+SHA256sum: d229a16075f2e6b0144cce56ce35bc4e73f92defcc3f0ca8e625c79ef785dbba
+Description:  ChinaDNS Next Generation, refactoring with epoll and ipset.
+
+Package: chinadns-ng
 Version: 2024.07.21-1
 Depends: libc
 License: AGPL-3.0-only
@@ -230,6 +242,19 @@ Size: 1613
 SHA256sum: 387a7a1b7e8283438b11d0fe6f4ab7b7e89a3f067be216513886eaafbb63f33a
 Description:  NATMap client scripts (Deluge)
 
+Package: natmapt-client-script-deluge
+Version: 20240603-4
+Depends: libc, natmapt
+Provides: natmapt-client-scripts
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 815
+Filename: natmapt-client-script-deluge_20240603-4_all.ipk
+Size: 1614
+SHA256sum: 550cd859f828be0fe0a3b9772edeb247b77c3fd3d24348b30081dd97b838b20c
+Description:  NATMap client scripts (Deluge)
+
 Package: natmapt-client-script-transmission
 Version: 20240603-3
 Depends: libc, natmapt
@@ -241,6 +266,19 @@ Installed-Size: 633
 Filename: natmapt-client-script-transmission_20240603-3_all.ipk
 Size: 1432
 SHA256sum: 9f480b8ac02fdc827fa414ae875bb47ef7a6af1db14d33fe37e58521bd62f9d2
+Description:  NATMap client scripts (Transmission)
+
+Package: natmapt-client-script-transmission
+Version: 20240603-4
+Depends: libc, natmapt
+Provides: natmapt-client-scripts
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 637
+Filename: natmapt-client-script-transmission_20240603-4_all.ipk
+Size: 1431
+SHA256sum: b30223402b83852fb65d46aabc4d458451d5f58d493edba47c87125dfff685c9
 Description:  NATMap client scripts (Transmission)
 
 Package: natmapt-notify-script-pushbullet
@@ -256,6 +294,19 @@ Size: 1428
 SHA256sum: 22f1d252bdcf79993f1b71a52a3bbe7ec5cb7656af132138cbd5b709c42c9a47
 Description:  NATMap notify scripts (Pushbullet)
 
+Package: natmapt-notify-script-pushbullet
+Version: 20240603-4
+Depends: libc, natmapt
+Provides: natmapt-notify-scripts
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 625
+Filename: natmapt-notify-script-pushbullet_20240603-4_all.ipk
+Size: 1423
+SHA256sum: b650418b3985534a4d5f805f088d6fe5cede2be2e30a8ac8ad623381ad17ab65
+Description:  NATMap notify scripts (Pushbullet)
+
 Package: natmapt-notify-script-pushover
 Version: 20240603-3
 Depends: libc, natmapt
@@ -267,6 +318,19 @@ Installed-Size: 646
 Filename: natmapt-notify-script-pushover_20240603-3_all.ipk
 Size: 1443
 SHA256sum: 7f8a3fecd22628d6dfdcd3efb6707acffbe4a77f7dcda8e4237d61c7114b07a2
+Description:  NATMap notify scripts (Pushover)
+
+Package: natmapt-notify-script-pushover
+Version: 20240603-4
+Depends: libc, natmapt
+Provides: natmapt-notify-scripts
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 645
+Filename: natmapt-notify-script-pushover_20240603-4_all.ipk
+Size: 1442
+SHA256sum: e5c1620a278df1e9b57379a301833aa16e322197c3eb1ef9c65b6dafdc337789
 Description:  NATMap notify scripts (Pushover)
 
 Package: natmapt-notify-script-telegram
@@ -282,6 +346,19 @@ Size: 1434
 SHA256sum: 20d426436b07f0417df2c21861e56d662404433d0497c2181bf2614b3c7e442f
 Description:  NATMap notify scripts (Telegram)
 
+Package: natmapt-notify-script-telegram
+Version: 20240603-4
+Depends: libc, natmapt
+Provides: natmapt-notify-scripts
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 639
+Filename: natmapt-notify-script-telegram_20240603-4_all.ipk
+Size: 1436
+SHA256sum: d4d670224066aa82d3c769949500f3168c9a7a7dbe63c79fffab1f35eeef7d48
+Description:  NATMap notify scripts (Telegram)
+
 Package: natmapt
 Version: 20240603-3
 Depends: libc, curl, jsonfilter, bash
@@ -292,6 +369,18 @@ Installed-Size: 26765
 Filename: natmapt_20240603-3_x86_64.ipk
 Size: 27667
 SHA256sum: 3f04d7686f41b434f6e1bedf152a9ee6f8661cf016ff6f0a42169f3e7d84d9c9
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: natmapt
+Version: 20240603-4
+Depends: libc, curl, jsonfilter, bash
+License: MIT
+Section: net
+Architecture: x86_64
+Installed-Size: 26803
+Filename: natmapt_20240603-4_x86_64.ipk
+Size: 27704
+SHA256sum: b819d2a8f0e5fc9d72b1a4d6fa697bdff1618a2d845f3dcde7eb2e36bc24d7e7
 Description:  TCP/UDP port mapping tool for full cone NAT
 
 Package: netdata-ssl
@@ -479,6 +568,18 @@ Installed-Size: 3653
 Filename: rgmac_1.5.0-20240101_all.ipk
 Size: 4475
 SHA256sum: b02f60974df7d82a5be269329a0bd3ca0e38fe7a81fb96612766986505123f6c
+Description:  A random MAC address generator
+
+Package: rgmac
+Version: 1.5.1-20240803
+Depends: libc, bash, curl, coreutils-cksum, getopt
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 3656
+Filename: rgmac_1.5.1-20240803_all.ipk
+Size: 4473
+SHA256sum: 73d2f3b24f926dd130a4e6d746c664c6d749fce411d38106f19958c0f22f70e2
 Description:  A random MAC address generator
 
 Package: speedtest-go
