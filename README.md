@@ -18,7 +18,7 @@ opkg install fantastic-keyring
 opkg install fantastic-packages-feeds
 # for apk
 apk add --allow-untrusted fantastic-keyring
-apk apk --allow-untrusted fantastic-packages-feeds
+apk add --allow-untrusted fantastic-packages-feeds
 ```
 
 ### OR Manually install keychains and feeds
